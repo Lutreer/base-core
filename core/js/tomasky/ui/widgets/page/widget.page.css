@@ -1,0 +1,99 @@
+@charset "utf-8";
+/**common*/
+.t-palign-left {
+    float: left;
+}
+
+.t-palign-right {
+    float: right;
+}
+
+/**t-page*/
+#t-page {
+    padding-bottom: 28px;
+}
+
+#t-page li {
+    float: left;
+}
+
+#t-page li.item {
+    border: solid 1px #ebebeb;
+    width: 30px;
+    cursor: pointer;
+    margin: 0 2px;
+    /*border-radius: 3px;*/
+}
+
+#t-page li.item, #t-page input, #t-page button {
+    /*border-radius: 3px;*/
+}
+
+#t-page li.first, #t-page li.last, #t-page button {
+    padding: 0 5px;
+}
+
+#t-page li.active {
+    color: #fff !important;
+}
+
+#t-page li.first {
+    margin-left: 50px;
+}
+
+#t-page li.last {
+    margin-right: 50px;
+}
+
+#t-page .pgesize-btn {
+    padding: 0 8px;
+}
+
+#t-page li.ellipsis + li {
+    border-left: solid #ebebeb 1px;
+}
+
+#t-page li.ellipsis {
+    background-color: white;
+    width: 35px;
+}
+
+#t-page li.stat-info {
+    line-height: 29px;
+    padding-right: 15px;
+    margin: 2px 0 0 0;
+    text-align: center;
+}
+
+#t-page li, #t-page button {
+    line-height: 30px;
+    text-align: center;
+}
+
+#t-page button, #t-page input {
+    border: solid 1px #ebebeb;
+}
+
+#t-page button {
+    margin-left: 5px;
+    cursor: pointer;
+    background-color: white;
+}
+
+#t-page input {
+    padding: 1px 0 1px 3px;
+    line-height: 28px;
+    width: 30px;
+}
+
+#t-page input.page-num {
+    margin: 2px 0 0 0;
+}
+
+#t-page .page-errors {
+    clear: both;
+    line-height: 30px;
+    color: #CA0207;
+    font-size: 14px;
+    display: none;
+}

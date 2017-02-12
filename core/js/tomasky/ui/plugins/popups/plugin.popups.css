@@ -1,0 +1,109 @@
+/*****************************************************************
+ *
+ * 弹出层
+ * 
+ * ui-popups
+ *
+ ****************************************************************/
+.tomasky-ui-popups {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    text-align: center;
+    overflow: auto;
+}
+
+.tomasky-ui-popups:after {
+    display: inline-block;
+    vertical-align: middle;
+    content: '';
+    height: 100%;
+    margin-left: -0.25em;
+}
+
+.tomasky-ui-popups .ui-popups-dialog {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 99%;
+    /*max-width: calc(100% - 0.25em) /* Only for IE9+ */
+    background-color: #ffffff;
+    /*border: solid 1px #f2f2f2;*/
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.2);
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    /*border-top-left-radius: 3px;*/
+}
+
+.tomasky-ui-popups-backdrop {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    opacity: .5;
+    filter: alpha(opacity=50); /*支持 IE 浏览器*/
+    -moz-opacity: 0.50; /*支持 FireFox 浏览器*/
+    background-color: #000;
+}
+
+.tomasky-ui-popups .ui-popups-head {
+    padding: 8px 0;
+    background-color: #f2f2f2;
+}
+
+.tomasky-ui-popups .ui-popups-dialog > .close {
+    position: absolute;
+    /*top: -1px;*/
+    right: -39px;
+    width: 38px;
+    height: 38px;
+    background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA3ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo2ZjZlMzM2Ny01ZGZlLTg4NDYtYWRlYi0zMDUxMWUyN2FhYjkiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6MDcwMUI1NkNGNDY4MTFFNDgyNkJGMDZCODgzMzE1OUUiIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6MDcwMUI1NkJGNDY4MTFFNDgyNkJGMDZCODgzMzE1OUUiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENDIDIwMTQgKFdpbmRvd3MpIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTlkYzJlODUtOTUyZi1lNDQ3LWI4NzgtNmM3ZTk2YjFjMDNkIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjZmNmUzMzY3LTVkZmUtODg0Ni1hZGViLTMwNTExZTI3YWFiOSIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/Po1Agt0AAAJESURBVHjaYmFgYGhgGESAiWGQgVEHjTpo1EGjDhp1ELkOEhIUYF8+fVJeanSEEdF6BPjZZnS1xtUW5rpQ3UEfP3369f7jx3d+7i6+abGRRsQ4pqu2MlpaQlzhxp27j4m1hxmIHYhR+P//f4aDx09eMzcykDY10LPg4eL6dO7ylRfY1Arw87F111VFi4uKyK7cuGXdig2br1PdQSDw6/fvfyBHWRgbghxlic1R/Ly8rD31VTESoqKyqzdvW794zforpKQhkhwEc9ShE6euW0BDipuTE+ioqy/gjmlAOGbR6nWXSU3UJDsI7Khfv/4dhDnKUN8c6KiPt+8/fNvbWB0NdIzcmi3bN5DjGBBgpKSBxsvDw9pdVxkJSrgfP31+y8/HKwxyzMJVay8NSDn0+cuX3019k9b8/fv3NzAhi1y9efs8JY6h2EGgEKovzg9lZmZmBRYJr7XVVQ2TIsMMKDGTrDQEcwwwN0VKiYsprN++a1P3tFk7rEyM5IAJ3ZyDne3DhSvXXtLNQchpZ+OO3ZvmLl91AZTQDwCLBGtTY3lTA31zdja29xeuku4okh0EdkxtRYS0pIQiyDFzlq28gJz7Dhw7edXazFjeDOgoNlbW9xevXn9JMwehOWYzsmOwOsoQ7Kh3QEe9orqDWFhYGPsbayJlJCWUoY45j6+cOnT81FUrM2MFkKOAQq+v3Lj5mqq5jI+Xhw1YEgtCo+k8wcr48+ffpU3tSx8/e35PWV5Oki4F42gDbdRBow4addCog+gAAAIMAK4xBIuQmi4aAAAAAElFTkSuQmCC);
+    font-size: 0;
+    cursor: pointer;
+}
+
+.tomasky-ui-popups .ui-popups-title {
+    font-size: 14px;
+    text-align: left;
+    color: #666666;
+    /*padding-left: 14px;*/
+    padding-left: 19px;
+    border-left: solid 4px #e84544;
+}
+
+.tomasky-ui-popups .ui-popups-body {
+    padding: 15px 24px 30px 24px;
+    text-align: left;
+    word-break: break-all;
+    overflow: auto;
+}
+
+.tomasky-ui-dialog .ui-popups-body-text-content h1,
+.tomasky-ui-dialog .ui-popups-body-text-content h2,
+.tomasky-ui-dialog .ui-popups-body-text-content h3,
+.tomasky-ui-dialog .ui-popups-body-text-content h4,
+.tomasky-ui-dialog .ui-popups-body-text-content h5,
+.tomasky-ui-dialog .ui-popups-body-text-content h6,
+.tomasky-ui-dialog .ui-popups-body-text-content p,
+.tomasky-ui-popups .ui-popups-body-text-content h1,
+.tomasky-ui-popups .ui-popups-body-text-content h2,
+.tomasky-ui-popups .ui-popups-body-text-content h3,
+.tomasky-ui-popups .ui-popups-body-text-content h4,
+.tomasky-ui-popups .ui-popups-body-text-content h5,
+.tomasky-ui-popups .ui-popups-body-text-content h6,
+.tomasky-ui-popups .ui-popups-body-text-content p {
+    line-height: 26px;
+    height: 26px;
+}
+
+.tomasky-ui-popups .ui-popups-foot {
+    padding: 30px 24px;
+    padding-top: 0;
+    text-align: left;
+}

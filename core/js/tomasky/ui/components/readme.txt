@@ -1,0 +1,4 @@
+
+components为一些半自动组件类工具util
+它只为一些公共组件或样式类组件类似于attach一些动作
+如nav-tabs：绑定click事件、只处理选中当前样式[active]

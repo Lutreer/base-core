@@ -1,0 +1,6 @@
+/*
+ * tomasky.ui.widgets.css
+ */
+@import url('../js/tomasky/ui/widgets/dialog/widget.dialog.css?__inline');
+@import url('../js/tomasky/ui/widgets/page/widget.page.css?__inline');
+@import url('../js/tomasky/ui/widgets/table/widget.table.css?__inline');

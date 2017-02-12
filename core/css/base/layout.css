@@ -1,0 +1,21 @@
+/*布局样式*/
+.tomasky-panel-main {
+    padding: 20px;
+}
+
+.tomasky-panel-main-h {
+    padding: 0 20px;
+}
+
+.tomasky-panel-main-v {
+    padding: 20px 0;
+}
+
+.tomasky-panel-main .tomasky-panel-item {
+    padding: 10px;
+}
+
+.tomasky-panel-main h1 {
+    font-size: 20px;
+    font-weight: bold;
+}

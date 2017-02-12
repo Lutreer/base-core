@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" media="screen" href="http://assets.test.fanqiele.com/core/css/tomasky.core.all.css"/>
+    <script src="http://assets.test.fanqiele.com/core/js/tomasky.core.all.js"></script>
+    <script src="http://assets.test.fanqiele.com/core/js/library/avalon/avalon.lib.js"></script>
+</head>
+<body>
+<div id="content" ms-controller="vm_content">
+    <ul>
+        <li ms-repeat="items">
+            <h1><a ms-attr-href="el.href">{{el.name}}</a></h1>
+            <span><em ms-click="edit($index)">edit</em></span>
+        </li>
+    </ul>
+</div>
+<script>
+    $(function () {
+        var vm_content = avalon.define({
+            $id : 'vm_content',
+            items : [
+                {href : 'http://www.baidu.com', name : 'baidu'},
+                {href : 'http://www.fanqiele.com', name : 'tomasky'}
+            ],
+            current : null,
+            edit : function (i) {
+                vm_content.current = vm_content.items[i]
+                tmsky.ui.dialog.alert(tmsky.json.stringify(vm_content.current.$model))
+            }
+        })
+    })
+</script>
+</body>
+</html>

@@ -1,0 +1,6 @@
+/*
+ * tomasky.core.ui.css
+ */
+@import url('tomasky.core.ui.widgets.css?__inline');
+@import url('tomasky.core.ui.plugins.css?__inline');
+@import url('tomasky.core.ui.components.css?__inline');

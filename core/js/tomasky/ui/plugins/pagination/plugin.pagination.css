@@ -1,0 +1,92 @@
+/*****************************************************************
+ *
+ * 分页
+ * 
+ * ui-pagination
+ *
+ ****************************************************************/
+.tomasky-ui-pagination {
+    display: inline-block;
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+    /*border-radius: 3px;*/
+    *zoom: 1;
+}
+
+.tomasky-ui-pagination:before,
+.tomasky-ui-pagination:after {
+    display: table;
+    content: " ";
+    line-height: 0;
+}
+
+.tomasky-ui-pagination:after {
+    clear: both;
+}
+
+.tomasky-ui-pagination > li {
+    float: left;
+    padding: 0;
+    /*margin: 0;*/
+    /*margin-left: -1px;*/
+    margin: 0 2px;
+}
+
+.tomasky-ui-pagination > li > a,
+.tomasky-ui-pagination > li > span {
+    display: block;
+    position: relative;
+    padding: 5px 10px;
+    color: #3d3d3d;
+    text-align: center;
+    text-decoration: none;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    /* min-width: 14px; */
+    /*border-radius: 3px;*/
+}
+
+.tomasky-ui-pagination > li > a:hover,
+.tomasky-ui-pagination > li > span:hover,
+.tomasky-ui-pagination > li > a:focus,
+.tomasky-ui-pagination > li > span:focus {
+    z-index: 2;
+    color: #cf2d01;
+    border-color: #cf2d01;
+}
+
+.tomasky-ui-pagination > li > a:hover,
+.tomasky-ui-pagination > .active > a,
+.tomasky-ui-pagination > .active > span,
+.tomasky-ui-pagination > .active > a:hover,
+.tomasky-ui-pagination > .active > span:hover,
+.tomasky-ui-pagination > .active > a:focus,
+.tomasky-ui-pagination > .active > span:focus {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #cf2d01;
+    border-color: #cf2d01;
+}
+
+.tomasky-ui-pagination > .disabled > span,
+.tomasky-ui-pagination > .disabled > span:hover,
+.tomasky-ui-pagination > .disabled > span:focus,
+.tomasky-ui-pagination > .disabled > a,
+.tomasky-ui-pagination > .disabled > a:hover,
+.tomasky-ui-pagination > .disabled > a:focus {
+    color: #ccc;
+    cursor: not-allowed;
+    background-color: #fff;
+    border-color: #ddd;
+}
+
+/* 分页主题 */
+.simple-theme > .tomasky-ui-pagination > li {
+    margin-right: 5px;
+}
+
+.simple-theme > .tomasky-ui-pagination > li:last-child {
+    margin-right: 0;
+}

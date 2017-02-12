@@ -1,0 +1,23 @@
+/*标签选择器*/
+select {
+    padding: 3px 3px 3px 5px;
+    border-radius: 3px;
+    border: solid 1px #e0e0e0;
+}
+
+html, body {
+    -webkit-text-size-adjust: none;
+}
+
+input, textarea {
+    outline: medium;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+    cursor: pointer;
+}

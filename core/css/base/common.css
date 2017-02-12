@@ -1,0 +1,144 @@
+/*一些零散的公用样式*/
+.border-box {
+    box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.center {
+    text-align: center !important;
+}
+
+.title {
+    font-size: 14px;
+    padding: 10px 0;
+}
+
+/**
+ * todo
+ */
+.justify {
+    text-align: justify;
+}
+
+.justify:after {
+    content: " ";
+    display: inline-block;
+    width: 100%;
+}
+
+/*avalon 作用域内的dom默认隐藏*/
+.ms-controller {
+    visibility: hidden;
+    display: none;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+/*浮动/清除浮动*/
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+/* 距离 */
+.mg-t10 {
+    margin-top: 10px;
+}
+
+.mg-r10 {
+    margin-right: 10px;
+}
+
+.pd-t-5 {
+    padding-top: 5px;
+}
+
+.pd-t-10 {
+    padding-top: 10px;
+}
+
+.pd-t-15 {
+    padding-top: 15px;
+}
+
+.pd-t-20 {
+    padding-top: 20px;
+}
+
+.p-26 {
+    line-height: 26px;
+    height: 26px;
+}
+
+/* 验证样式*/
+.v-error {
+    /*border: 1px solid #DB7C22;*/
+    border: 2px solid #DB3822 !important;
+}
+
+.clear {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1
+}
+
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    content: " ";
+    line-height: 0;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.word-wrap-break {
+    word-wrap: break-word !important;
+    word-break: break-all !important;
+}
+
+.break-all {
+    word-wrap: break-word;
+    word-break: break-all;
+    white-space: pre-line;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.v-hide {
+    visibility: hidden;
+}
+
+.v-show {
+    visibility: visible;
+}
+
+.tomasky-hidden-x {
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+}
+
+.tomasky-hidden-y {
+    overflow-y: hidden !important;
+    overflow-x: auto !important;
+}

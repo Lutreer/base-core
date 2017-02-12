@@ -1,0 +1,374 @@
+/*tc.ui.table.css*/
+.tomasky-table-box {
+    margin: 0
+}
+
+/*表说明及搜索框-------------------------------------------------*/
+.tomasky-table-box .table_title_comment {
+    margin-bottom: 10px;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    border: 1px solid #f1e8af;
+    background: #fdfae5;
+    color: #ab5d00;
+    clear: both;
+}
+
+.tomasky-table-box .table_title_comment p {
+    padding: 0 20px;
+}
+
+.tomasky-table-box .table_search {
+    float: right;
+    color: #999
+}
+
+.tomasky-table-box .table_search > span {
+    color: #000;
+}
+
+.tomasky-table-box .table_search > input.table_search_input,
+.tomasky-table-box .table_search > select {
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    color: #999;
+    padding: 0 18px;
+}
+
+.tomasky-table-box .table_search > input.table_search_input {
+    width: 100px;
+}
+
+.tomasky-table-box .table_search > select {
+    height: 31px;
+    line-height: 31px;
+    top: 1px;
+}
+
+.tomasky-table-box .search_box {
+    height: 32px;
+    margin: 10px 0;
+}
+
+.tomasky-table-box .search_input {
+    margin-left: 10px;
+    padding: 7px 10px;
+    height: 16px;
+    width: 200px;
+    border: 1px solid #ebebeb;
+    font-size: 12px;
+    line-height: 16px;
+    outline: none;
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.tomasky-table-box .table_search .search-btn {
+    display: inline-block;
+    width: 50px;
+    height: 30px;
+    background: #f2f2f2;
+    border: 1px solid #ebebeb;
+    vertical-align: top;
+    text-align: center;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+
+.tomasky-table-box .table_search .search-btn:hover {
+    background: #cf2d01;
+    color: #fff
+}
+
+.tomasky-table-box .table_search .tc-icon-search {
+    display: inline-block;
+    margin-top: 10px;
+    width: 12px;
+    height: 12px;
+    background: url(images/inco_search_customer.png) no-repeat 0 0;
+}
+
+.tomasky-table-box .table_search .search-btn:hover .tc-icon-search {
+    background: url(images/inco_search_customer.png) no-repeat -18px 0;
+}
+
+.tomasky-table-box .NumBox {
+    position: relative;
+    padding-left: 10px;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 32px;
+}
+
+.tomasky-table-box .NumBox:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 3px;
+    height: 16px;
+    background: #cf2d01;
+}
+
+.tomasky-table-box .customerNum,
+.tomasky-table-box .blacklistNum,
+.tomasky-table-box .allBlacklistNum {
+    font-size: 16px;
+    padding: 0 5px;
+}
+
+/*table样式-------------------------------------------------------------------*/
+.tomasky-table-container .switch_btn {
+    padding: 10px 0;
+    font-size: 0;
+    overflow: hidden;
+    zoom: 1
+}
+
+.tomasky-table-container .switch_btn span {
+    font-size: 12px;
+    border-radius: 0px;
+}
+
+.tomasky-table-box .base_table {
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #e0e0e0;
+    line-height: 40px;
+    text-align: left;
+    border-collapse: collapse;
+}
+
+.tomasky-table-box .base_table a {
+    color: #cf2d01;
+    text-decoration: none;
+    padding: 5px;
+    cursor: pointer;
+}
+
+/*初使化标题栏---------------------------------------------------------------*/
+.tomasky-table-box .base_table th, .tomasky-table-box .base_table td {
+    padding: 0 5px;
+    height: 40px;
+    text-align: left;
+}
+
+.tomasky-table-box .base_table th:first-child {
+    padding-left: 25px;
+}
+
+.tomasky-table-box .base_table td:first-child {
+    padding-left: 20px;
+}
+
+.tomasky-table-box .base_table thead {
+    background: #f2f2f2
+}
+
+.tomasky-table-box .base_table td {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.tomasky-table-box .base_table tbody tr:nth-child(2n) {
+    background: #f9f9f9;
+}
+
+/*page页-------------------------------------------------------------------*/
+.tomasky-table-box .table_pages {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.tomasky-table-box .first_page,
+.tomasky-table-box .last_page,
+.tomasky-table-box .prev_page,
+.tomasky-table-box .next_page,
+.tomasky-table-box .table_page_num span,
+.tomasky-table-box .last10page,
+.tomasky-table-box .next10page {
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+    padding: 0 12px;
+    vertical-align: top;
+    border: 1px solid #ebebeb;
+    /*border-radius: 3px;*/
+    cursor: pointer;
+    margin: 0 2px;
+}
+
+/*用户自选样式==========================================================*/
+/*标题下拉菜单-------------------------*/
+.tomasky-table-box .payReverse,
+.tomasky-table-box .outReverse {
+    display: inline-block;
+    width: 13px;
+    height: 40px;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.tomasky-table-box .base_table .up {
+    background: url("images/up_down.png") no-repeat -7px 14px;
+}
+
+.tomasky-table-box .base_table .down {
+    background: url("images/up_down.png") no-repeat 3px 14px;
+}
+
+.tomasky-table-box .base_table .filter_box {
+    position: relative;
+    padding: 0 10px;
+}
+
+.tomasky-table-box .base_table .select_show {
+    display: block;
+    height: 22px;
+    width: 100px;
+    border: 1px solid #999;
+    line-height: 22px;
+    padding: 0 10px;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+}
+
+.tomasky-table-box .base_table .select_show:after {
+    content: '';
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    width: 0;
+    height: 0;
+    border: 5px solid #aaaaaa;
+    border-color: #aaaaaa transparent transparent transparent;
+}
+
+.tomasky-table-box .base_table .select_box {
+    display: none;
+    width: 120px;
+    border: 1px solid #999;
+    line-height: 22px;
+    position: absolute;
+    top: 31px;
+    left: 10px;
+    background: #fff;
+}
+
+.tomasky-table-box .base_table .select_box li {
+    padding: 0 10px;
+}
+
+.tomasky-table-box .base_table .select_box li:hover {
+    background: #cf2d01;
+    color: #fff;
+}
+
+.tomasky-table-box .filter_show {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    width: 100%;
+    vertical-align: top;
+}
+
+.tomasky-table-box .filter_box:after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 15px;
+    display: inline-block;
+    width: 0;
+    height: 0;
+    border: 5px solid #000000;
+    border-color: #9c9c9c transparent transparent transparent;
+}
+
+.tomasky-table-box .filter {
+    position: absolute;
+    display: none;
+    top: 40px;
+    left: -1px;
+    width: 100%;
+    background: #fff;
+}
+
+.tomasky-table-box .filter li {
+    border: 1px solid #ebebeb;
+    border-top: none;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    padding: 0 5px;
+}
+
+.tomasky-table-box .filter li:first-child {
+    border-top: 1px solid #ebebeb;
+}
+
+/*表中form设置*/
+.tomasky-table-container .button,
+.tomasky-table-box .button {
+    display: inline-block;
+    padding: 0 18px;
+    border: 1px solid #cdcdcd;
+    line-height: 28px;
+    cursor: pointer;
+    float: none;
+    border-radius: 3px;
+}
+
+.tomasky-table-container .button-item,
+.tomasky-table-box .button-item {
+    border-right: none;
+}
+
+.tomasky-table-box .base_table .tab_btn {
+    display: inline-block;
+    padding: 0 10px;
+    border: 1px solid #cdcdcd;
+    line-height: 22px;
+    cursor: pointer;
+    margin-left: 3px;
+    border-radius: 3px;
+}
+
+/*tomasky-table-container*/
+.tomasky-table-container .base_table .tab_btn:hover,
+.tomasky-table-container .prev_page:hover,
+.tomasky-table-container .next_page:hover,
+.tomasky-table-container .table_page_num span:hover,
+.tomasky-table-container .active_btn,
+.tomasky-table-container .button:hover,
+.tomasky-table-container .first_page:hover,
+.tomasky-table-container .last_page:hover,
+.tomasky-table-container .last10page:hover,
+.tomasky-table-container .next10page:hover,
+    /*tomasky-table-box*/
+.tomasky-table-box .base_table .tab_btn:hover,
+.tomasky-table-box .prev_page:hover,
+.tomasky-table-box .next_page:hover,
+.tomasky-table-box .table_page_num span:hover,
+.tomasky-table-box .active_btn,
+.tomasky-table-box .button:hover,
+.tomasky-table-box .first_page:hover,
+.tomasky-table-box .last_page:hover,
+.tomasky-table-box .last10page:hover,
+.tomasky-table-box .next10page:hover {
+    background: #cf2d01;
+    color: #fff;
+    border-color: #cf2d01;
+}
+
+.tomasky-table-box .fa-plus {
+    font-size: 14px;
+    font-weight: bold;
+}

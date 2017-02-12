@@ -1,0 +1,143 @@
+.table {
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid #e0e0e0;
+    table-layout: fixed;
+}
+
+.table > thead,
+.table .table-head {
+    background: #f2f2f2;
+}
+
+.table > thead > tr,
+.table .table-head {
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.table > thead > tr.table-white {
+    background-color: white;
+}
+
+.table > thead > tr > th {
+    text-align: left;
+    vertical-align: middle;
+}
+
+.table > thead > tr,
+.table > tbody > tr {
+    border-top: 1px solid #e0e0e0;
+    height: 30px;
+    line-height: 30px;
+}
+
+.table > thead > tr > td,
+.table > thead > tr > th,
+.table > tbody > tr > td,
+.table > tbody > tr > th {
+    padding: 8px;
+    line-height: 1.42857143;
+    vertical-align: middle;
+    word-break: break-all;
+    text-align: left;
+}
+
+.table > thead > tr > th.th-select-num,
+.table > tbody > tr > th.th-select-num {
+    padding-left: 30px !important;
+}
+
+.table > thead > tr > td.td-select,
+.table > tbody > tr > td.td-select {
+    padding-left: 17px !important;
+}
+
+.table > thead > tr > td.td-select-num,
+.table > tbody > tr > td.td-select-num {
+    padding-left: 40px !important;
+}
+
+.table > thead > tr > td.table-right,
+.table > thead > tr > th.table-right,
+.table > tbody > tr > td.table-right,
+.table > tbody > tr > th.table-right {
+    text-align: right !important;
+    padding-right: 30px !important;
+}
+
+.table > thead > tr > td.table-center,
+.table > thead > tr > th.table-center,
+.table > tbody > tr > td.table-center,
+.table > tbody > tr > th.table-center {
+    text-align: center !important;
+}
+
+.table > thead > tr > td.table-center,
+.table > tbody > tr > td.table-center {
+    cursor: pointer;
+}
+
+.table > thead > tr > td.table-center.default,
+.table > tbody > tr > td.table-center.default {
+    cursor: default !important;
+}
+
+.table > thead > tr > td.table-cursor,
+.table > thead > tr > th.table-cursor,
+.table > tbody > tr > td.table-cursor,
+.table > tbody > tr > th.table-cursor {
+    cursor: pointer;
+}
+
+.table-striped > tbody > tr:nth-child(even) {
+    background-color: #f6f6f6;
+}
+
+.table-hover > tbody > tr:hover {
+    background-color: #f4f4f4;
+}
+
+.table-bordered > thead > tr > td,
+.table-bordered > thead > tr > th,
+.table-bordered > tbody > tr > td,
+.table-bordered > tbody > tr > th {
+    border-right: 1px solid #e0e0e0;
+}
+
+.table-nowrap > thead > tr > td,
+.table-nowrap > tbody > tr > td,
+.table-nowrap > tbody > tr > th {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.table > thead > tr > th .tomasky-tomasky-ui-dropdown {
+    width: 100%;
+    vertical-align: top;
+}
+
+.table > thead > tr > th .tomasky-ui-dropdown > a {
+    height: 22px;
+    line-height: 22px;
+    white-space: normal;
+    overflow: hidden;
+}
+
+.table > thead > tr > th .tomasky-ui-dropdown-list > a {
+    height: 25px;
+    line-height: 25px;
+}
+
+.table-p {
+    margin: 5px;
+}
+
+.table-p-h {
+    margin: 0 5px;
+}
+
+.table-p-v {
+    margin: 5px 0;
+}

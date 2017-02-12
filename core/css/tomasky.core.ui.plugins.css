@@ -1,0 +1,8 @@
+/*
+ * tomasky.ui.plugin.css
+ */
+@import url('../js/tomasky/ui/plugins/dropdown/plugin.dropdown.css?__inline');
+@import url('../js/tomasky/ui/plugins/pagination/plugin.pagination.css?__inline');
+@import url('../js/tomasky/ui/plugins/poptip/plugin.poptip.css?__inline');
+@import url('../js/tomasky/ui/plugins/popups/plugin.popups.css?__inline');
+@import url('../js/tomasky/ui/plugins/tabs/plugin.tabs.css?__inline');

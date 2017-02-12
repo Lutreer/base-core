@@ -1,0 +1,22 @@
+/*
+tomasky.core.base.css
+    tomasky.core.base.css
+        base/reset.css
+        base/common.css
+        iconfont/iconfont.css
+        ../js/library/jquery/jquery-ui/jquery-ui.min.css
+
+    tomasky.core.ui.css
+        tomasky.core.ui.widget.css
+            ../js/tomasky/ui/widgets/dialog/tc.ui.dialog.css
+            ../js/tomasky/ui/widgets/table/tc.ui.table.css
+
+        tomasky.core.ui.plugin.css
+            ../js/tomasky/ui/plugins/dropdown/tc.ui.plugin.dropdown.css
+            ../js/tomasky/ui/plugins/pagination/tc.ui.plugin.pagination.css
+            ../js/tomasky/ui/plugins/poptip/tc.ui.plugin.poptip.css
+            ../js/tomasky/ui/plugins/popups/tc.ui.plugin.popups.css
+            ../js/tomasky/ui/plugins/tabs/tc.ui.plugin.tabs.css
+*/
+@import url('tomasky.core.base.css?__inline');
+@import url('tomasky.core.ui.css?__inline');
